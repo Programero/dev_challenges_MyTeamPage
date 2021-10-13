@@ -59,7 +59,7 @@ img {
 .team-images {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 3.125rem;
+  grid-column-gap: 10vw;
 }
 .member {
   position: relative;
@@ -88,4 +88,42 @@ img {
 
 .member:nth-child(odd) {
   padding-bottom: 3.125rem;
+}
+
+.footer p {
+  text-align: center;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 20px;
+  color: #a9a9a9;
+}
+
+@media (min-width: 480px) {
+  .container {
+    max-width: 70vw;
+    margin: 0px auto;
+  }
+  #overview > p {
+    font-size: 1.125rem;
+  }
+  .main-heading {
+    grid-template-columns: 1fr 1fr;
+  }
+  .team-images {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .member:nth-child(2),
+  .member:nth-child(5) {
+    padding-top: 3.125rem;
+    padding-bottom: 0px;
+  }
+
+  .member:nth-child(1),
+  .member:nth-child(3),
+  .member:nth-child(4),
+  .member:nth-child(6) {
+    padding-bottom: 3.125rem;
+    padding-top: 0px;
+  }
 }
